@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="src" path="src/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="build/output/libs/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/classmate-1.3.0.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/hibernate-commons-annotations-5.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/hibernate-core-5.2.12.Final.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/jandex-2.0.3.Final.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/jboss-logging-3.3.0.Final.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/jboss-transaction-api_1.2_spec-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-aop-4.3.11.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-beans-4.3.11.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-boot-1.5.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-context-4.3.11.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-core-4.3.11.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-expression-4.3.11.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-beans-5.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-core-5.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-jcl-5.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-jdbc-5.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-tx-5.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-aop-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-boot-1.5.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-boot-autoconfigure-1.5.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-context-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/output/libs/spring-expression-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,21 @@
+apply plugin: 'java'
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+   compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.12.Final'
+   compile group: 'org.springframework.boot', name: 'spring-boot', version: '1.5.7.RELEASE'
+   compile group: 'org.springframework', name: 'spring-jdbc', version: '5.0.1.RELEASE'
+   compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '1.5.8.RELEASE'
+   testCompile group: 'junit', name: 'junit', version: '4.+'
+   
+}
+
+task copyToLib(type: Copy) {
+    into "$buildDir/output/libs"
+    from configurations.runtime
+}
+
+build.dependsOn(copyToLib)
