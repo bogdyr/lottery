@@ -1,14 +1,50 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE")
+    }
+}
+
 apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+sourceSets {
+	main {
+		java {
+			srcDir 'src/java'
+		}
+		resources {
+			srcDir 'src/resources'
+		}
+	}
+}
+
+jar {
+	from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+	manifest {
+		attributes 'Main-Class': 'com.free.lotto.configuration.Application'
+	}
+}
+
 repositories {
     mavenCentral()
 }
-
 
 dependencies {
    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.12.Final'
    compile group: 'org.springframework.boot', name: 'spring-boot', version: '1.5.7.RELEASE'
    compile group: 'org.springframework', name: 'spring-jdbc', version: '5.0.1.RELEASE'
    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '1.5.8.RELEASE'
+   compile("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: "spring-boot-starter-tomcat"
+    }
+    compile("org.springframework.boot:spring-boot-starter-jetty")
    testCompile group: 'junit', name: 'junit', version: '4.+'
    
 }
